@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-noto-sans-thai);
+  --font-serif: var(--font-noto-sans-thai-looped);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+@utility button {
+  @apply text-neutral-600 hover:text-neutral-800 px-2 py-1 hover:bg-neutral-200 rounded-lg duration-300;
+}
+
+@utility footer-link {
+  @apply text-neutral-600 hover:text-neutral-800 py-1 hover:underline hover:underline-offset-2 rounded-lg duration-300;
+}
+
+@utility button-lg {
+  @apply text-neutral-600 hover:text-neutral-800 px-4 py-2 hover:bg-neutral-200 rounded-lg duration-300;
+}
+
+@utility primary-button {
+  @apply text-white inline-block bg-[#001CBD] rounded-full px-4 py-2 font-semibold hover:cursor-pointer;
+}
+
+@utility secondary-button {
+  @apply text-neutral-800 inline-block bg-white rounded-full px-4 py-2 font-semibold;
+}
+
+/* === GENERATED DESIGN TOKENS START === */
+@theme inline {
+  /* Design System Colors */
+  /* Quartz colors */
+  --color-qt-900: #bfbfbf;
+  --color-qt-800: #cccccc;
+  --color-qt-700: #d9d9d9;
+  --color-qt-600: #e6e6e6;
+  --color-qt-500: #e8e8e8;
+  --color-qt-400: #ebebeb;
+  --color-qt-300: #ededed;
+  --color-qt-200: #f0f0f0;
+  --color-qt-100: #f2f2f2;
+
+  /* Carbon colors */
+  --color-cb-900: #4d4d4d;
+  --color-cb-800: #595959;
+  --color-cb-700: #666666;
+  --color-cb-600: #737373;
+  --color-cb-500: #808080;
+  --color-cb-400: #8c8c8c;
+  --color-cb-300: #999999;
+  --color-cb-200: #a6a6a6;
+  --color-cb-100: #b3b3b3;
+
+  /* Sapphire colors */
+  --color-sp-100: #667fff;
+  --color-sp-200: #4d6aff;
+  --color-sp-300: #3355ff;
+  --color-sp-400: #1a40ff;
+  --color-sp-500: #002aff;
+  --color-sp-600: #0026e5;
+  --color-sp-700: #0022cc;
+  --color-sp-800: #001eb2;
+  --color-sp-900: #001999;
+
+  /* Pearl colors */
+  --color-pl-900: #c9c1b6;
+  --color-pl-800: #d4cec4;
+  --color-pl-700: #ddd8d0;
+  --color-pl-600: #e5e2db;
+  --color-pl-500: #e7e5de;
+  --color-pl-400: #eae8e1;
+  --color-pl-300: #eceae4;
+  --color-pl-200: #eeece7;
+  --color-pl-100: #f0eeea;
+
+  /* General colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Onyx colors */
+  --color-on-900: #262626;
+  --color-on-800: #2b2b2b;
+  --color-on-700: #303030;
+  --color-on-600: #363636;
+  --color-on-500: #3b3b3b;
+  --color-on-400: #404040;
+  --color-on-300: #454545;
+  --color-on-200: #4a4a4a;
+  --color-on-100: #4f4f4f;
+
+  /* Agate colors */
+  --color-ag-900: #f5f5f5;
+  --color-ag-800: #f7f7f7;
+  --color-ag-700: #fafafa;
+  --color-ag-600: #fcfcfc;
+
+}
+
+
+/* Typography Utilities - Individual Classes */
+/*
+    Use for the typography components in the app
+    See the components in /components/typography/index.tsx
+*/
+
+@utility tp-special-title-1 {
+  @apply text-7xl font-semibold;
+}
+
+@utility tp-special-title-2 {
+  @apply text-6xl font-semibold;
+}
+
+@utility tp-special-title-3 {
+  @apply text-5xl font-semibold;
+}
+
+@utility tp-title {
+  @apply text-4xl font-semibold;
+}
+
+@utility tp-h1 {
+  @apply text-3xl font-semibold;
+}
+
+@utility tp-h2 {
+  @apply text-2xl font-semibold;
+}
+
+@utility tp-h3 {
+  @apply text-xl font-semibold;
+}
+
+@utility tp-title-sub {
+  @apply text-xl mt-3;
+}
+
+@utility tp-h-sub {
+  @apply text-lg;
+}
+
+@utility tp-body {
+  @apply text-base;
+}
+
+@utility tp-tools {
+  @apply text-sm;
+}
