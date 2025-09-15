@@ -1,11 +1,10 @@
 import Image from "next/image";
+import Index0915 from "./components/pages/Index0915";
 
 export default function Home() {
   return (
     <div className="font-sans flex items-center justify-center min-h-screen">
-      <div>
-        <h1 className="tp-h1">สำหรับพัฒนา</h1>
-      </div>
+      <Index0915 />
     </div>
   );
 }

@@ -18,25 +18,10 @@ body {
   font-family: var(--font-sans);
 }
 
-@utility button {
-  @apply text-neutral-600 hover:text-neutral-800 px-2 py-1 hover:bg-neutral-200 rounded-lg duration-300;
-}
-
 @utility footer-link {
   @apply text-neutral-600 hover:text-neutral-800 py-1 hover:underline hover:underline-offset-2 rounded-lg duration-300;
 }
 
-@utility button-lg {
-  @apply text-neutral-600 hover:text-neutral-800 px-4 py-2 hover:bg-neutral-200 rounded-lg duration-300;
-}
-
-@utility primary-button {
-  @apply text-white inline-block bg-[#001CBD] rounded-full px-4 py-2 font-semibold hover:cursor-pointer;
-}
-
-@utility secondary-button {
-  @apply text-neutral-800 inline-block bg-white rounded-full px-4 py-2 font-semibold;
-}
 
 /* === GENERATED DESIGN TOKENS START === */
 @theme inline {

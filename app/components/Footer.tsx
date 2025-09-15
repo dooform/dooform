@@ -8,10 +8,9 @@ const Footer = () => {
         <div className='flex flex-col items-start w-full text-cb-900 bg-ag-900 border border-qt-700 p-6 gap-6 rounded-xl'>
             <div className='flex flex-col lg:flex-row items-start justify-between w-full lg:gap-2 gap-6'>
                 <div className='flex flex-col items-start justify-center gap-2 shrink-0'>            
-                    <img src="/logo.svg" alt="logo" className='flex w-full max-w-[128px] shrink-0'/>
+                    <img src="/df-01.svg" alt="logo" className='flex w-full max-w-[128px] shrink-0 mb-2'/>
                     <div className='flex flex-col gap-2'>
-                        <p>© 2025 Dooform by Knight Consultant <br /> Under License of Rinkai</p>            
-                        <p>การใช้งานเว็บไซต์นี้นับว่า<br />คุณได้ยอมรับเงื่อนไขในการใช้งานเรียบร้อย</p> 
+                        <p>© 2025 Dooform by Knight Consultant <br /> Under License of Rinkai</p>                                    
                     </div>           
                 </div>
                 <div className='grid md:grid-cols-4 grid-cols-2 lg:flex items-start lg:justify-end w-full gap-6 lg:gap-12'>            
@@ -42,10 +41,12 @@ const Footer = () => {
                     </ul>        
                 </div>  
             </div>    
-            <ul className='flex flex-col items-start justify-start'>
-                <li className='flex gap-1 items-center'><Link href="/contact" className='footer-link'>Knight Tech</Link> <ArrowUpRight className='w-4 h-4'/></li>                
-                <li className='flex gap-1 items-center'><Link href="https://www.knightvisahelppoint.com/" className='footer-link'>knight consultant worldwide company limited</Link> <ArrowUpRight className='w-4 h-4'/></li>
-            </ul>
+            <div className='flex w-full items-center justify-between'>
+                <ul className='flex flex-col items-start justify-start'>                
+                    <li className='flex gap-1 items-center'><Link href="https://www.knightvisahelppoint.com/" className='footer-link'>knight consultant worldwide company limited</Link> <ArrowUpRight className='w-4 h-4'/></li>
+                </ul>
+                <p>การใช้งานเว็บไซต์นี้นับว่าคุณได้ยอมรับเงื่อนไขในการใช้งานเรียบร้อย</p> 
+            </div>
         </div>        
     </footer>
   )
