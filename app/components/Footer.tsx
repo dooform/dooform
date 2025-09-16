@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Footer = () => {
   return (
     <footer className='flex w-full justify-between font-sans text-sm'>
-        <div className='flex flex-col items-start w-full text-cb-900 bg-ag-900 border border-qt-700 p-6 gap-6 rounded-xl'>
+        <div className='flex flex-col items-start w-full text-cb-900 p-6 gap-6 rounded-xl max-w-7xl mx-auto'>
             <div className='flex flex-col lg:flex-row items-start justify-between w-full lg:gap-2 gap-6'>
                 <div className='flex flex-col items-start justify-center gap-2 shrink-0'>            
                     <img src="/df-01.svg" alt="logo" className='flex w-full max-w-[128px] shrink-0 mb-2'/>

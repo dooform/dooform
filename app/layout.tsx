@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Sans_Thai, Noto_Sans_Thai_Looped } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 const notoSansThai = Noto_Sans_Thai({
   variable: "--font-noto-sans-thai",
@@ -30,9 +31,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${notoSansThai.variable} ${notoSansThaiLooped.variable} antialiased p-4 sm:p-8 max-w-7xl mx-auto`}
-      >
-        {children}
+        className={`${notoSansThai.variable} ${notoSansThaiLooped.variable} antialiased`}
+      >        
+        <Navbar />
+        <div className="p-4 sm:p-8 max-w-7xl mx-auto">
+          {children}
+        </div>        
         <Footer />       
       </body>
     </html>
