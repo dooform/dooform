@@ -15,7 +15,7 @@ const Navbar = () => {
                     <li className='flex gap-2 items-center'><a href='#'>สำหรับพัฒนา</a><ChevronDown className='w-5'/></li>                    
                 </ul>
             </section>
-            <Link href="/form" className='px-4 py-2 bg-on-700 text-ag-600 rounded-full'>เริ่มต้นใช้งาน</Link>
+            <Link href="https://www.app.dooform.com/" className='px-4 py-2 bg-on-700 text-ag-600 rounded-full'>เริ่มต้นใช้งาน</Link>
         </nav>
     </div>
   )
