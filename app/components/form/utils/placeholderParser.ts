@@ -51,8 +51,8 @@ export function extractPlaceholders(htmlContent: string): (PlaceholderField | Gr
   const grouped = groupIdFields(placeholders);
 
   return grouped.sort((a, b) => {
-    const aLabel = 'label' in a ? a.label : a.fields[0].label;
-    const bLabel = 'label' in b ? b.label : b.fields[0].label;
+    const aLabel = 'fields' in a ? a.label : a.label;
+    const bLabel = 'fields' in b ? b.label : b.label;
     return aLabel.localeCompare(bLabel);
   });
 }
