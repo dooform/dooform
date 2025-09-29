@@ -34,7 +34,7 @@ export default function RootLayout({
         className={`${notoSansThai.variable} ${notoSansThaiLooped.variable} antialiased`}
       >        
         <Navbar />
-        <div className="p-6 max-w-7xl mx-auto font-sans">
+        <div className="p-6 max-w-7xl mx-auto">
           {children}
         </div>        
         <Footer />       
