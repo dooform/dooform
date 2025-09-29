@@ -91,6 +91,17 @@ body {
   --color-ag-700: #fafafa;
   --color-ag-600: #fcfcfc;
 
+  /* Moonstone colors */
+  --color-ms-900: #3B342B;
+  --color-ms-800: #4A4136;
+  --color-ms-700: #594F41;
+  --color-ms-600: #675C4B;
+  --color-ms-500: #766956;
+  --color-ms-400: #847661;
+  --color-ms-300: #93836C;
+  --color-ms-200: #A89C8A;
+  --color-ms-100: #B3A898;
+
 }
 
 

@@ -10,7 +10,7 @@ const Navbar = () => {
                 <Link href="/" className='flex items-center'>
                     <img src='/Dooform-NoIcon.svg' alt='logo' className='h-8 my-2'></img>
                 </Link>
-                <ul className='items-center gap-6 text-sm font-medium hidden md:flex'>
+                <ul className='items-center gap-6 text-sm font-medium hidden md:flex text-ms-500'>
                     <li className='flex gap-2 items-center'><a href='#'>ผลิตภัณฑ์</a><ChevronDown className='w-5'/></li>
                     <li className='flex gap-2 items-center'><a href='#'>สำหรับธุรกิจ</a><ChevronDown className='w-5'/></li>
                     <li className='flex gap-2 items-center'><a href='#'>แพ็คเกจ</a><ChevronDown className='w-5'/></li>

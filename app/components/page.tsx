@@ -3,7 +3,7 @@ import React from 'react'
 
 const ComponentPage = () => {
   return (
-    <div className='flex flex-col gap-4 text-on-700'>
+    <div className='flex flex-col gap-4 text-ms-800'>
         <Book className='w-16 h-16'/>
         <h1 className='text-5xl font-semibold py-4'>Components Guideline</h1>
         <h1 className='text-4xl font-semibold py-2'>Typography Guide</h1>
