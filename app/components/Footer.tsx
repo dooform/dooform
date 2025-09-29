@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='flex flex-col items-start w-full text-cb-900 p-6 gap-6 rounded-xl max-w-7xl mx-auto'>
             <div className='flex flex-col lg:flex-row items-start justify-between w-full lg:gap-2 gap-6'>
                 <div className='flex flex-col items-start justify-center gap-2 shrink-0'>            
-                    <img src="/df-01.svg" alt="logo" className='flex w-full max-w-[128px] shrink-0 mb-2'/>
+                    <img src="/Dooform-NoIcon.svg" alt="logo" className='flex w-full max-w-[128px] shrink-0 mb-2'/>
                     <div className='flex flex-col gap-2'>
                         <p>© 2025 Dooform by Knight Consultant <br /> Under License of Rinkai</p>                                    
                     </div>           
@@ -41,7 +41,7 @@ const Footer = () => {
                     </ul>        
                 </div>  
             </div>    
-            <div className='flex w-full items-center justify-between'>
+            <div className='flex flex-col sm:flex-row w-full items-center justify-between gap-2'>
                 <ul className='flex flex-col items-start justify-start'>                
                     <li className='flex gap-1 items-center'><Link href="https://www.knightvisahelppoint.com/" className='footer-link'>knight consultant worldwide company limited</Link> <ArrowUpRight className='w-4 h-4'/></li>
                 </ul>
