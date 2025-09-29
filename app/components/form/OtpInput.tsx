@@ -67,7 +67,9 @@ const OtpInput: React.FC<OtpInputProps> = ({ groupedField, values, onChange }) =
         {groupedField.fields.map((field, index) => (
           <div key={field.key} className="flex flex-col items-center">
             <input
-              ref={(el) => (inputRefs.current[index] = el)}
+              ref={(el) => {
+                inputRefs.current[index] = el;
+              }}
               type="text"
               maxLength={1}
               value={values[field.key] || ''}
