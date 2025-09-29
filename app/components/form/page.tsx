@@ -3,13 +3,13 @@
 import React, { useState, useEffect } from 'react'
 import DynamicForm from './DynamicForm'
 import HtmlPreview from './HtmlPreview'
-import { extractPlaceholders, replacePlaceholders, PlaceholderField } from './utils/placeholderParser'
+import { extractPlaceholders, replacePlaceholders, PlaceholderField, GroupedField } from './utils/placeholderParser'
 
 const FormFillPage = () => {
   const [htmlFile, setHtmlFile] = useState('/example_copy.html')
   const [availableFiles, setAvailableFiles] = useState<string[]>([])
   const [htmlContent, setHtmlContent] = useState('')
-  const [placeholders, setPlaceholders] = useState<PlaceholderField[]>([])
+  const [placeholders, setPlaceholders] = useState<(PlaceholderField | GroupedField)[]>([])
   const [formValues, setFormValues] = useState<Record<string, string>>({})
   const [previewHtml, setPreviewHtml] = useState('')
 
@@ -61,7 +61,15 @@ const FormFillPage = () => {
         // Initialize form values
         const initialValues: Record<string, string> = {}
         extractedPlaceholders.forEach(placeholder => {
-          initialValues[placeholder.key] = ''
+          if ('fields' in placeholder) {
+            // Grouped field - initialize all fields in the group
+            placeholder.fields.forEach(field => {
+              initialValues[field.key] = ''
+            })
+          } else {
+            // Regular field
+            initialValues[placeholder.key] = ''
+          }
         })
         setFormValues(initialValues)
 
