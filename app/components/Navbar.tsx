@@ -4,7 +4,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='font-sans sticky top-0 z-50 flex w-full items-center justify-center px-6 border-b border-b-qt-700 bg-pl-300 h-16'>
+    <div className='font-sans sticky top-0 z-50 flex w-full items-center justify-center px-6 border-b border-b-qt-700 h-16 bg-background/50 backdrop-blur-xl'>
         <nav className='flex max-w-7xl w-full mx-auto items-center justify-between'>
             <section className='flex items-center gap-12'>
                 <Link href="/" className='flex items-center'>
@@ -18,7 +18,7 @@ const Navbar = () => {
                 </ul>
             </section>
             <Link href="https://www.app.dooform.com/" className='px-1.5 h-8 bg-on-900 text-ag-600 rounded-full text-sm font-medium items-center flex justify-center'>
-              <p className='px-1.5'>เริ่มต้นใช้งาน</p>
+              <p className='px-1.5'>เข้าสู่ระบบ</p>
             </Link>
         </nav>
     </div>

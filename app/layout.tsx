@@ -29,9 +29,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overscroll-none">
       <body
-        className={`${notoSansThai.variable} ${notoSansThaiLooped.variable} antialiased`}
+        className={`${notoSansThai.variable} ${notoSansThaiLooped.variable} antialiased overscroll-none`}
       >        
         <Navbar />
         <div className="p-6 max-w-7xl mx-auto">

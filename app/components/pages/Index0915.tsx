@@ -9,7 +9,7 @@ const Index0915 = () => {
             <p className="text-3xl md:text-6xl md:leading-20 font-semibold text-ms-800 text-center">กรอกเอกสาร<br />ไม่ใช่เรื่องยากอีกต่อไป</p>
             <p className="lg:text-xl font-medium text-ms-600">ดูฟอร์ม ผู้ช่วยกรอกเอกสารราชการได้อย่างรวดเร็ว</p>
         </div>
-        <Link href="https://www.app.dooform.com/" className='px-1.5 h-8 bg-on-900 text-ag-600 rounded-full text-sm font-medium items-center flex justify-center'>
+        <Link href="https://www.app.dooform.com/" className='px-3.5 h-[48px] bg-on-900 text-ag-600 rounded-full text-base font-medium items-center flex justify-center'>
               <p className='px-1.5'>เริ่มต้นใช้งาน</p>
         </Link>
       </div>
